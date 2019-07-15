@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
+#include "MyDate.h"
 
 int main() {
 
 	int input = 0;
-
+	MyDate * date = new MyDate();
 	do {
 
 		std::string menu = "\nEnter:\n1 to add resources\n2 to display overdue items\n3 to display all resources\n4 to delete a resource\n5 to change todays date\n6 to display current date\n7 to quit\n";
