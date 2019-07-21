@@ -6,6 +6,7 @@ int main() {
 
 	int input = 0;
 	MyDate * date = new MyDate();
+
 	do {
 
 		std::string menu = "\nEnter:\n1 to add resources\n2 to display overdue items\n3 to display all resources\n4 to delete a resource\n5 to change todays date\n6 to display current date\n7 to quit\n";
@@ -19,6 +20,8 @@ int main() {
 		switch (input) {
 
 		case 1: std::cout << "You chose 1\n";
+			std::cout << "Calling method in MyDate";
+			date->inputDate();
 			break;
 		case 2: std::cout << "You chose 2\n";
 			break;
