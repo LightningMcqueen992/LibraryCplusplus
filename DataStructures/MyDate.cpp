@@ -14,6 +14,7 @@ MyDate::MyDate(int year, int day, int month) {
 
 bool MyDate::inputDate(void) {
 	int input;
+	char trash;
 
 	do {
 		std::cout << "Enter month - between 1 and 12: ";
@@ -22,6 +23,7 @@ bool MyDate::inputDate(void) {
 		}
 		else {
 			std::cout << "Invalid month input";
+			
 		}
 		
 	} while (this->month <=0 || this->month > 12);
@@ -40,6 +42,7 @@ MyDate MyDate::add(MyDate date, int addDay) {
 	else {
 
 	}
+	return date;
 }
 
 bool MyDate::isEqual(MyDate date) {
