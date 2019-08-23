@@ -1,27 +1,36 @@
 #include <iostream>
+#include <limits>
 #include <string>
-#include "MyDate.h"
+//#include "Resource.h"
+#include "Book.h"
 
 int main() {
 
-	int input = 0;
+	int input;
 	MyDate * date = new MyDate();
+	Resource * item;
 
 	do {
-
+		
 		std::string menu = "\nEnter:\n1 to add resources\n2 to display overdue items\n3 to display all resources\n4 to delete a resource\n5 to change todays date\n6 to display current date\n7 to quit\n";
 
 		std::cout << menu;
 		std::cin >> input;
-		if (input < 0 || input > 8) {
 
+		if (!std::cin) {
+			std::cout << "Bad input" << std::endl;
+			std::cin.clear();
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		}
 
 		switch (input) {
 
 		case 1: std::cout << "You chose 1\n";
-			std::cout << "Calling method in MyDate";
 			date->inputDate();
+			
+			item = new Book();
+			item->inputResource(*date);
+
 			break;
 		case 2: std::cout << "You chose 2\n";
 			break;
@@ -38,7 +47,7 @@ int main() {
 		default: std::cout << "Unknown input\n";
 			break;
 		}
-	} while (input < 0 || input > 8);
+	} while (input != 7);
 
 	return 0;
 }

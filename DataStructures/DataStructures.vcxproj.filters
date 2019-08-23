@@ -27,12 +27,21 @@
     <ClCompile Include="MyDate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DVD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="MyDate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MyDate.h">
+    <ClInclude Include="Book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DVD.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

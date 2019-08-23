@@ -118,6 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DVD.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="MyDate.cpp" />
@@ -125,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
+    <ClInclude Include="DVD.h" />
     <ClInclude Include="MyDate.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>

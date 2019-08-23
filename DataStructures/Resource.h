@@ -13,5 +13,5 @@ public:
 	Resource();
 	bool inputResource(MyDate date);
 	bool isOverDue(MyDate date);
-	std::string toString();
+	
 };
